@@ -462,7 +462,6 @@ transform: scale(1.4);
 }
 
 .works {
-    outline: 2px solid green;
     display: flex;
     gap: 30px;
     margin: 0px;
@@ -522,9 +521,6 @@ transform: scale(1.4);
 .list-team {
     display: flex;
     gap: 30px;
-
-
-    outline: 2px solid #f50830;
 }
 
 .item-team {
@@ -603,11 +599,8 @@ transform: scale(1.4);
     align-items: center;
     justify-content: space-between;
     margin: 0px auto;
-
-    outline: 2px solid salmon;
     
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -616,7 +609,6 @@ transform: scale(1.4);
 .customers:focus {
         border-color: var(--brand-color);
         color: var(--brand-color);
-        outline: var(--brand-color);
 }
 
 .customers-logo {
@@ -636,7 +628,6 @@ transform: scale(1.4);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
@@ -786,7 +777,6 @@ a.location {
     padding: 0px;
     margin: 0px auto 56px;
     justify-content: center;
-    outline: solid 2px yellow;
 }
 
 .project-button {
@@ -895,8 +885,6 @@ a.location {
 
     max-width: 370px;
     max-height: 294px;
-
-    outline: 2px solid slateblue;
 
     opacity: 0;
 
