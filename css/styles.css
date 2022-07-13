@@ -341,7 +341,7 @@ a.head-info {
     padding: 0px;
     align-items: center;
     justify-content: center;
-    margin: 8px 8px auto auto;
+    margin: 8px 8px 1px auto;
 
     color: var(--primary-color);
     background-color: var(--main-white);
@@ -359,6 +359,7 @@ a.head-info {
     transform: scale(1.1);
     background-color: var(--brand-color);
     color: var(--main-white);
+    
 }
 
 .cross-button {
@@ -379,7 +380,7 @@ a.head-info {
     display: block;
     max-width: 448px;
     height: 23px;
-    margin: auto;
+    margin: 0px auto 12px;
 
     font-weight: 700;
     font-size: 20px;
@@ -391,7 +392,7 @@ a.head-info {
 }
 
 .form-labels {
-    margin: 12px auto 20px;
+    margin: 0px auto ;
     width: 448px;
     min-height: 342px;
 
@@ -400,19 +401,56 @@ a.head-info {
     line-height: 1.7;
     letter-spacing: 0.01em;
 
+    color: var(--description-color);
 }
 
 .labels {
     display: block;
     flex-direction: column;
     margin-bottom: 10px;
-
+    padding: 11px 12px;
     width: 448px;
+    height: 40px;
+    color: var(--primary-color);
 
-    color: var(--description-color);
-   
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    transition: border-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+/* .lable-relative {
+    position: relative;
+}
+.icon-lable {
+    position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+} */
+
+.labels:hover,
+.labels:focus {
+
+    border-color: var(--brand-color);
+    outline: transparent;
 }
 
+.placeholder {
+    height: 120px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 12px 16px;
+    color: rgba(117, 117, 117, 0.5);
+    text-decoration: underline 0.5px solid var(--brand-color);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.placeholder:hover,
+.placeholder:focus {
+    border-color: var(--brand-color);
+}
 .agreement {
     display: flex;
     justify-content: space-evenly;
@@ -430,13 +468,21 @@ a.head-info {
     text-decoration: underline;
 }
 
+.agreement input[tpye="chekbox"] {
+    width: 16px;
+    height: 15px;
+    
+}
+
 .submit {
     display: block;
     padding: 10px 55px;
     margin: 0px auto;
-    /* margin-bottom: 40px; */
 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+
 /* Особенности */
 
 .pad {
