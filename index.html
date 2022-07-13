@@ -56,7 +56,6 @@
 
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
-<!-- какойто текст -->
             <button class="button-close" data-modal-close>
                <div >
                   <svg class="cross-button" width="30px" height="30px">
@@ -64,6 +63,39 @@
                   </svg>
                </div>
             </button>
+               <div class="form-head">
+                  <p>Оставьте свои данные, мы вам перезвоним</p>
+                </div>
+                  <div class="form-labels">
+                     <form class="form">
+                        <label name=""  for="name">
+                           Имя
+                           <!-- <svg>
+                              <use href="./img/icons/sprite.svg#person" height="18px" width="18px"></use>
+                           </svg> -->
+                        </label>
+                        <input type="text" class="labels" id="name">
+                        <label name="" for="tel">
+                           Телефон 
+                        </label>
+                        <input type="tel"  class="labels" id="tel">
+                        <label name="" for="email">
+                           Почта
+                        </label>
+                        <input type="email" class="labels" id="email">
+                        <label for="comment">
+                           Коментарий
+                        </label>
+                        <textarea name="" class="labels" placeholder="Введите текст" for="comment"></textarea>
+                        <div class="agreement">
+                           <input type="checkbox" id="checkbox">
+                        <label for="checkbox">
+                           Соглашаюсь с рассылкой и принимаю <a class="agreement-link">Условия договора</a>
+                        </label>
+                        </div>
+                        <button type="submit" class="button submit">Отправить</button>
+                     </form>
+                  </div>
          </div>
       </div>
    </div>
@@ -426,7 +458,6 @@
                            <a href="#" class="footer-link">
                               <svg class="socials-icon" width="20" height="20">
                                  <use href="./img/icons/sprite.svg#instagram">
-                     
                                  </use>
                               </svg>
                            </a>
@@ -435,7 +466,6 @@
                            <a href="#" class="footer-link">
                               <svg class="socials-icon" width="20" height="20">
                                  <use href="./img/icons/sprite.svg#twitter">
-                     
                                  </use>
                               </svg>
                            </a>
@@ -444,7 +474,6 @@
                            <a href="#" class="footer-link">
                               <svg class="socials-icon" width="20" height="20">
                                  <use href="./img/icons/sprite.svg#facebook">
-                     
                                  </use>
                               </svg>
                            </a>
@@ -453,13 +482,19 @@
                            <a href="#" class="footer-link">
                               <svg class="socials-icon" width="20" height="20">
                                  <use href="./img/icons/sprite.svg#linkedin">
-                     
                                  </use>
                               </svg>
                            </a>
                         </li>
                      </ul>
                   </div>
+            </div>
+               <div class="footer-subscribe">
+                  <p class="subscribe">Подпишитесь на рассылку</p>
+                  <form action="" class="footer-form">
+                     <input type="email" class="subscribe-email" placeholder="E-mail">
+                     <button type="submit" class="button subscription">Подписаться</button>
+                  </form>
                </div>
 </div>
 </footer>
